@@ -45,6 +45,7 @@ public class Grabber {
         if (restartGrubber) {
             LOG.info("Grubber restart");
             grabber.restart();
+            grabber.flush();
         }
         grabber.grabImage();
     }
